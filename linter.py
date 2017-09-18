@@ -3,7 +3,7 @@
 # Linter for SublimeLinter3, a code checking framework for Sublime Text 3
 #
 # Written by Jan T. Sott
-# Copyright (c)  2017 Jan T. Sott
+# Copyright (c) 2017 Jan T. Sott
 #
 # https://github.com/idleberg/SublimeLinter-contrib-iscc
 #
@@ -11,7 +11,7 @@
 #
 
 
-"""This module exports the Makensis plugin class."""
+"""This module exports the Iscc plugin class."""
 
 from SublimeLinter.lint import Linter, util
 from sys import platform
