@@ -12,7 +12,7 @@ This linter plugin for [SublimeLinter][docs] provides an interface to [ISCC](htt
 SublimeLinter 3 must be installed in order to use this plugin. If SublimeLinter 3 is not installed, please follow the instructions [here][installation].
 
 ### Linter installation
-Before using this plugin, you must ensure that Inno Setup is installed on your system. Download the Inno Setup setup from [GitHub](http://www.jrsoftware.org/isdl.php) and follow the installation steps.
+Before using this plugin, you must ensure that Inno Setup is installed on your system. Download the Inno Setup setup from the developer's [website](http://www.jrsoftware.org/isdl.php) and follow the installation steps.
 
 ### Linter configuration
 In order for `ISCC` to be executed by SublimeLinter, you must [ensure that its path is available][path] to SublimeLinter. Before going any further, please read and follow the steps in [“Finding a linter executable”](http://sublimelinter.readthedocs.org/en/latest/troubleshooting.html#finding-a-linter-executable) through “Validating your PATH” in the documentation.
