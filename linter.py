@@ -19,7 +19,7 @@ class Iscc(Linter):
 
     """Provides an interface to the ISCC executable."""
 
-    cmd = ('ISCC.exe', '/Q', '/O-', '@')
+    cmd = ('ISCC.exe', '/Q', '/O-', '${file}')
     defaults = {
         'selector': 'source.inno'
     }
