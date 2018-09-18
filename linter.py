@@ -20,7 +20,9 @@ class Iscc(Linter):
     """Provides an interface to the ISCC executable."""
 
     cmd = ('ISCC.exe', '/Q', '/O-', '@')
-    syntax = 'inno setup'
+    defaults = {
+        'selector': 'source.inno'
+    }
     regex = (
         r'^Error on line (?P<line>\d+) in (?P<file>.*\.iss): (?P<message>.+)$'
     )
