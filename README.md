@@ -1,54 +1,36 @@
-SublimeLinter-contrib-iscc
-================================
+# SublimeLinter-contrib-iscc
 
-[![The MIT License](https://img.shields.io/badge/license-MIT-orange.svg?style=flat-square)](http://opensource.org/licenses/MIT)
+[![The MIT License](https://flat.badgen.net/badge/license/MIT/blue)](https://opensource.org/licenses/MIT)
 [![Package Control](https://packagecontrol.herokuapp.com/downloads/SublimeLinter-contrib-iscc.svg?style=flat-square)](https://packagecontrol.io/packages/SublimeLinter-contrib-iscc)
-[![GitHub](https://img.shields.io/github/release/idleberg/SublimeLinter-contrib-iscc.svg?style=flat-square)](https://github.com/idleberg/SublimeLinter-contrib-iscc/releases)
-[![Travis CI](https://img.shields.io/travis/idleberg/SublimeLinter-contrib-iscc/master.svg?style=flat-square)](https://travis-ci.org/idleberg/SublimeLinter-contrib-iscc)
+[![GitHub](https://flat.badgen.net/github/release/idleberg/SublimeLinter-contrib-iscc)](https://github.com/idleberg/SublimeLinter-contrib-iscc/releases)
+[![CircleCI](https://flat.badgen.net/circleci/github/idleberg/generator-atom-package-coffeescript)](https://circleci.com/gh/idleberg/SublimeLinter-contrib-iscc)
 
-This linter plugin for [SublimeLinter][docs] provides an interface to [ISCC](http://www.jrsoftware.org/ishelp/index.php?topic=compilercmdline). It will be used with Inno Setup scripts.
+This linter plugin for [SublimeLinter](https://github.com/SublimeLinter/SublimeLinter) provides an interface to [ISCC](http://www.jrsoftware.org/ishelp/index.php?topic=compilercmdline). It will be used with Inno Setup scripts..
+
+## Prerequisites
+
+1. Make sure you have [SublimeLinter](https://github.com/SublimeLinter/SublimeLinter) installed
+2. Ensure that `brew` is installed on your system and available in your [PATH environmental variable](http://sublimelinter.readthedocs.io/en/latest/troubleshooting.html#finding-a-linter-executable)
 
 ## Installation
-SublimeLinter 3 must be installed in order to use this plugin. If SublimeLinter 3 is not installed, please follow the instructions [here][installation].
 
-### Linter installation
-Before using this plugin, you must ensure that Inno Setup is installed on your system. Download the Inno Setup setup from the developer's [website](http://www.jrsoftware.org/isdl.php) and follow the installation steps.
+### Package Control
 
-### Linter configuration
-In order for `ISCC` to be executed by SublimeLinter, you must [ensure that its path is available][path] to SublimeLinter. Before going any further, please read and follow the steps in [“Finding a linter executable”](http://sublimelinter.readthedocs.org/en/latest/troubleshooting.html#finding-a-linter-executable) through “Validating your PATH” in the documentation.
+1. Make sure you have [Package Control](https://packagecontrol.io/) installed
+2. Choose *“Install Package”* from the Command Palette (<kbd>Super</kbd>+<kbd>Shift</kbd>+<kbd>p</kbd>)
+3. Type *“SublimeLinter-contrib-iscc”* and press <kbd>Enter</kbd>
 
-Once you have installed and configured `ISCC`, you can proceed to install the SublimeLinter-contrib-iscc plugin if it is not yet installed.
+With the [`auto_upgrade`](https://packagecontrol.io/docs/settings#setting-auto_upgrade) setting enabled, Package Control will keep all installed packages up-to-date!
 
-### Plugin installation
-Please use [Package Control][pc] to install the linter plugin. This will ensure that the plugin will be updated when new versions are available. If you want to install from source so you can modify the source code, you probably know what you are doing so we won’t cover that here.
+### Using Git
 
-To install via Package Control, do the following:
+1. Change to your Sublime Text `Packages` directory
+2. Clone repository `git clone https://github.com/idleberg/SublimeLinter-contrib-iscc.git SublimeLinter-contrib-iscc`
 
-1. Within Sublime Text, bring up the [Command Palette][cmd] and type `install`. Among the commands you should see `Package Control: Install Package`. If that command is not highlighted, use the keyboard or mouse to select it. There will be a pause of a few seconds while Package Control fetches the list of available plugins.
+## Settings
 
-1. When the plugin list appears, type `ISCC`. Among the entries you should see `SublimeLinter-contrib-iscc`. If that entry is not highlighted, use the keyboard or mouse to select it.
+Please refer to the official documentation in order to tweak the [SublimeLinter settings](http://sublimelinter.readthedocs.org/en/latest/settings.html) or [linter settings](http://sublimelinter.readthedocs.org/en/latest/linter_settings.html).
 
-## Contributing
-If you would like to contribute enhancements or fixes, please do the following:
+## License
 
-1. Fork the plugin repository.
-1. Hack on a separate topic branch created from the latest `master`.
-1. Commit and push the topic branch.
-1. Make a pull request.
-1. Be patient.  ;-)
-
-Please note that modifications should follow these coding guidelines:
-
-- Indent is 4 spaces.
-- Code should pass flake8 and pep257 linters.
-- Vertical whitespace helps readability, don’t be afraid to use it.
-- Please use descriptive variable names, no abbreviations unless they are very well known.
-
-Thank you for helping out!
-
-[docs]: http://sublimelinter.readthedocs.org
-[installation]: http://sublimelinter.readthedocs.org/en/latest/installation.html
-[locating-executables]: http://sublimelinter.readthedocs.org/en/latest/usage.html#how-linter-executables-are-located
-[path]: http://superuser.com/a/284351/195953
-[pc]: https://sublime.wbond.net/installation
-[cmd]: http://docs.sublimetext.info/en/sublime-text-3/extensibility/command_palette.html
+This work is licensed under the [The MIT License](LICENSE)
